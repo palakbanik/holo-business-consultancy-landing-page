@@ -30,14 +30,14 @@ const Hero = () => {
                 <div className="w-full max-w-[568px] h-full max-h-[568px] bg-custom-font-primary/10 rounded-full absolute -bottom-50 right-80 blur-3xl animate-pulse hidden md:block"></div>
                 {/* img side */}
                 <div className="w-full h-auto z-10 relative">
-                    <div className="absolute bottom-[104px] left-0 2xl:-left-[72px]">
+                    <div className="absolute bottom-5 sm:bottom-10 2xl:bottom-[104px] left-0 2xl:-left-[72px]">
                         <HeroReview
                             image={heroReviewOne}
                             name={"George"}
                             para={"Project Manager"}
                         />
                     </div>
-                    <div className="absolute top-[104px] right-0 sm:right-17 md:right-0 lg:right-2 2xl:right-0">
+                    <div className="absolute top-5 sm:top-10 2xl:top-[104px] right-0 sm:right-17 md:right-0 lg:right-5 2xl:right-0">
                         <HeroReview
                             image={heroReviewTwo}
                             name={"Natasha"}
