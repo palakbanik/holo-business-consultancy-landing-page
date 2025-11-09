@@ -11,6 +11,8 @@ import heroLogoThree from "../../assets/hero-logo-three.svg";
 import GreenHeadingText from "../ui/GreenHeadingText";
 import PrimaryButton from "../ui/PrimaryButton";
 import HeroReview from "../ui/HeroReview";
+import BigHeadingText from "../ui/BigHeadingText";
+import ParaText from "../ui/ParaText";
 
 const logos = [
     { id: 1, logo: heroLogoOne },
@@ -23,13 +25,13 @@ const logos = [
 
 const Hero = () => {
     return (
-        <section className="w-full h-auto pt-[120px] md:pt-[226px] pb-[162px] bg-custom-bg-primary text-custom-font-white overflow-hidden">
-            <div className="max-w-[1520px] mx-auto px-5 sm:px-8 2xl:px-0 flex flex-col-reverse md:flex-row items-center md:items-start gap-10 lg:gap-[97px] relative">
+        <section className="w-full h-auto pt-[120px] pb-16 md:pb-[162px] md:pt-[226px] bg-custom-bg-primary text-custom-font-white overflow-hidden">
+            <div className="max-w-[1520px] mx-auto px-5 sm:px-8 md:px-16 2xl:px-0 flex flex-col-reverse md:flex-row items-center md:items-start gap-10 lg:gap-[97px] relative">
                 {/* blobs */}
                 <div className="w-full max-w-[568px] h-full max-h-[568px] bg-custom-font-primary/10 rounded-full absolute -top-50 -right-24 blur-3xl animate-pulse"></div>
                 <div className="w-full max-w-[568px] h-full max-h-[568px] bg-custom-font-primary/10 rounded-full absolute -bottom-50 right-80 blur-3xl animate-pulse hidden md:block"></div>
                 {/* img side */}
-                <div className="w-full h-auto z-10 relative">
+                <div className="md:w-full h-auto z-10 relative">
                     <div className="absolute bottom-5 sm:bottom-10 2xl:bottom-[104px] left-0 2xl:-left-[72px]">
                         <HeroReview
                             image={heroReviewOne}
@@ -37,7 +39,7 @@ const Hero = () => {
                             para={"Project Manager"}
                         />
                     </div>
-                    <div className="absolute top-5 sm:top-10 2xl:top-[104px] right-0 sm:right-17 md:right-0 lg:right-5 2xl:right-0">
+                    <div className="absolute top-5 sm:top-10 2xl:top-[104px] right-0  2xl:right-0">
                         <HeroReview
                             image={heroReviewTwo}
                             name={"Natasha"}
@@ -55,20 +57,16 @@ const Hero = () => {
                             <GreenHeadingText text={"Business Consultancy"} />
                         </div>
 
-                        <h1 className="font-normal text-[40px] lg:text-[59px] leading-14 sm:leading-16 xl:leading-21 tracking-[-0.03em] mb-3 lg:mb-10">
-                            Innovative Approaches for Modern
-                            <span className="text-custom-font-primary italic">
-                                {" "}
-                                Business Success
-                            </span>
-                        </h1>
+                        <BigHeadingText
+                            mainText={"Innovative Approaches for Modern"}
+                            spanText={"Business Success"}
+                        />
 
-                        <p className="font-extralight text-base leading-5 2xl:leading-7.5 tracking-normal text-custom-font-white/70">
-                            We believe that in today’s fast-paced business
-                            landscape, innovation is key to staying ahead. Our
-                            team of seasoned consultants brings fresh,
-                            forward-thinking strategies.
-                        </p>
+                        <ParaText
+                            text={
+                                "We believe that in today’s fast-paced business landscape, innovation is key to staying ahead. Our team of seasoned consultants brings fresh, forward-thinking strategies."
+                            }
+                        />
                     </div>
 
                     {/* button part */}
@@ -92,7 +90,7 @@ const Hero = () => {
                     </div>
 
                     {/* logos part  */}
-                    <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-5 mt-20 xl:mt-[100px]">
+                    <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-5 mt-20 xl:mt-[215px]">
                         {logos.map((logo, i) => (
                             <img
                                 key={i}

@@ -3,10 +3,10 @@ import { MdOutlineStar } from "react-icons/md";
 
 const HeroReview = ({ image, name, para }) => {
     return (
-        <div className="flex items-center gap-[11px] bg-custom-font-white/25 backdrop-blur-3xl rounded-2xl px-4 py-2.5">
+        <div className="flex items-center gap-[11px] bg-custom-font-white/25 backdrop-blur-3xl rounded-2xl px-4 py-2.5 z-10">
             <img src={image} alt="image" />
 
-            <div className="flex flex-col items-start gap-[6px]">
+            <div className="flex flex-col items-start gap-1.5">
                 <h5 className="font-semibold text-sm leading-none tracking-normal text-custom-font-white">
                     {name}
                 </h5>

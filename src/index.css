@@ -20,6 +20,20 @@
     --color-custom-font-black: #000000;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-custom-font-black);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-custom-font-primary);
+    border-radius: 6px;
+}
+
 html {
     scroll-behavior: smooth;
 }

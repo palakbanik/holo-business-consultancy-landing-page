@@ -14,7 +14,7 @@ const Navbar = () => {
     const [isOpenMenu, setIsOpenMenu] = useState(false);
     return (
         <header className="w-full h-auto py-6 md:py-0 md:mt-10 fixed -top-7 md:top-0 left-0 right-0 z-50">
-            <nav className="max-w-[1520px] mx-auto px-5 sm:px-8 py-5 md:py-0 2xl:px-0 flex flex-col relative bg-custom-bg-primary/30 text-custom-font-white backdrop-blur-md md:rounded-[14px]">
+            <nav className="max-w-[1520px] mx-auto px-5 sm:px-8 md:px-16 py-5 md:py-0 2xl:px-0 flex flex-col relative bg-custom-bg-primary/30 text-custom-font-white backdrop-blur-md md:rounded-[14px]">
                 <div className="w-full flex items-center justify-between">
                     {/* logo */}
                     <a href="/">
